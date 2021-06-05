@@ -1,0 +1,25 @@
+$psb_ui_chart $mol_chart
+	series_x?val /number
+	graphs /
+		<= Fact $mol_plot_group
+			title @ \Fact
+			series_x <= series_x
+			series_y <= series_fact?val /number
+			graphs /
+				<= Fact_fill $mol_plot_fill
+				<= Fact_line $mol_plot_line
+				<= Fact_dots $mol_plot_dot
+		<= Plan $mol_plot_group
+			title @ \Plan
+			series_x <= series_x
+			series_y <= series_plan?val /number
+			graphs /
+				<= Plan_fill $mol_plot_fill
+				<= Plan_line $mol_plot_line
+					type \dashed
+				<= Plan_dots $mol_plot_dot
+		<= Amount $mol_plot_ruler_vert
+			title \
+		<= Years $mol_plot_mark_hor
+			title \
+			series_x <= series_x
