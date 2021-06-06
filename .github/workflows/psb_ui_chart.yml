@@ -3,6 +3,9 @@ name: psb_ui_chart
 on:
   workflow_dispatch:
   push:
+    paths:
+      - '.github/workflows/psb_ui_chart.yml'
+      - 'chart/**'
   schedule:
   - cron: "0 7 * * *"
 
@@ -17,4 +20,5 @@ jobs:
       uses: hyoo-ru/mam_build@master2
       with:
         token: ${{ secrets.GH_PAT }}
-        package: 'psb/ui/chart'
+        package: 'psb/ui'
+        modules: 'chart'
