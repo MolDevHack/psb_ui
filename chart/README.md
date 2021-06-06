@@ -5,7 +5,7 @@ Plan-fact charts
 ## MAM usage
 
 ```tree
-$psb_chart
+$psb_ui_chart
 	series_x /number
 	series_fact /number
 	series_plan /number
@@ -14,9 +14,9 @@ $psb_chart
 ## Angular usage
 
 ```
-<psb-chart
+<psb-ui-chart
 	series_x="[2018,2019,2020,2021]"
 	series_fact="[0,100,250,800]"
 	series_plan="[50,80,150,500]"
-></psb-chart>
+></psb-ui-chart>
 ```
