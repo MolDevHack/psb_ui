@@ -6,9 +6,9 @@ Plan-fact charts
 
 ```tree
 $psb_ui_chart
-	series_x /number
-	series_fact /number
-	series_plan /number
+	series_x <= years /number
+	series_fact <= fact /number
+	series_plan <= plan /number
 ```
 
 ## Angular usage
