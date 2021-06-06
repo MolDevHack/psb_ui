@@ -1,4 +1,4 @@
-name: Deploy
+name: psb_ui_chart
 
 on:
   workflow_dispatch:
